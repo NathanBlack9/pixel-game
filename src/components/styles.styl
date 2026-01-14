@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+}
+
+.item {
+  width: 48px; height: @width;
+
+  &.item-coin {
+    background-image: url('@/assets/items.svg'), url('@/assets/grass-pixel.png');
+    background-size: 400%, 100%;
+    background-position: 6% 10%, 0 0;
+  }
+
+  &.item-star {
+    background-image: url('@/assets/items.svg'), url('@/assets/grass-pixel.png');
+    background-size: 400%, 100%;
+    background-position: 50% 10%, 0 0;
+  }
+
+  &.item-diamond {
+    background-image: url('@/assets/items.svg'), url('@/assets/grass-pixel.png');
+    background-size: 400%, 100%;
+    background-position: 50% 87%, 0 0;
+  }
+
+  .player.rotated {
+    transform: rotateY(180deg)
+  }
+}
